@@ -1,0 +1,75 @@
+[versions]
+kotlin-version = "2.1.20"
+compose-ui-version = "1.7.8"
+retrofit-version = "2.11.0"
+hilt-version = "1.2.0"
+dagger-version = "2.51.1"
+room-version = "2.7.0"
+accompanist-pager-version = "0.28.0"
+google-services-version = "4.4.2"
+compose-compiler-version = "2.0.20"
+gradle-version = "8.9.1"
+kotlin-gradle-version = "2.0.20"
+ksp-version = "2.0.21-1.0.27"
+
+[plugins]
+library = { id = "com.android.library", version.ref = "gradle-version" }
+application = { id = "com.android.application", version.ref = "gradle-version" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "compose-compiler-version" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp-version" }
+kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin-gradle-version" }
+
+[libraries]
+android-gradle-plugin = { module = "com.android.tools.build:gradle", version = "8.9.1" }
+google-services-classpath = { module = "com.google.gms:google-services", version.ref = "google-services-version" }
+dagger-hilt-classpath = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "dagger-version" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin-version" }
+
+core-ktx = { module = "androidx.core:core-ktx", version = "1.16.0" }
+lifecycle-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version = "2.8.7" }
+compose-activity = { module = "androidx.activity:activity-compose", version = "1.10.1" }
+
+compose-bom = { module = "androidx.compose:compose-bom", version = "2025.04.00" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-material3-window-size-class1 = { module = "androidx.compose.material3:material3-window-size-class" }
+compose-ui-test-junit4-test = { module = "androidx.compose.ui:ui-test-junit4", version = "1.7.8" }
+compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-ui-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose-ui-version" }
+compose-material = { module = "androidx.compose.material:material", version.ref = "compose-ui-version" }
+compose-animation = { module = "androidx.compose.animation:animation-android", version.ref = "compose-ui-version" }
+compose-navigation = { module = "androidx.navigation:navigation-compose", version = "2.8.9" }
+compose-coil = { module = "io.coil-kt:coil-compose", version = "2.2.2" }
+
+accompanist-pager = { module = "com.google.accompanist:accompanist-pager", version.ref = "accompanist-pager-version" }
+accompanist-pager-indicators = { module = "com.google.accompanist:accompanist-pager-indicators", version.ref = "accompanist-pager-version" }
+accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanist-pager-version" }
+
+firebase-database-ktx = { module = "com.google.firebase:firebase-database-ktx", version = "21.0.0" }
+
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room-version" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room-version" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room-version" }
+
+dagger-hilt = { module = "com.google.dagger:hilt-android", version.ref = "dagger-version" }
+dagger-hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "dagger-version" }
+
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-version" }
+hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hilt-version" }
+
+okhttp-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version = "4.9.3" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit-version" }
+retrofit-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit-version" }
+retrofit-adapter-rxjava2 = { module = "com.squareup.retrofit2:adapter-rxjava2", version.ref = "retrofit-version" }
+
+junit-test = { module = "junit:junit", version = "4.13.2" }
+ext-junit-test = { module = "androidx.test.ext:junit", version = "1.2.1" }
+espresso-core-test = { module = "androidx.test.espresso:espresso-core", version = "3.6.1" }
+
+mockito-kotlin-test = { module = "org.mockito.kotlin:mockito-kotlin", version = "4.1.0" }
+coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version = "1.7.3" }
+
+[bundles]
